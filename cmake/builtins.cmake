@@ -58,6 +58,12 @@ add_builtin(
     INCLUDE_DIRS
         runtime)
 
+add_builtin(
+    builtins::web::msgpack
+    SRC
+        builtins/web/msgpack/msgpack.cpp
+        builtins/web/msgpack/mpack.c)
+
 add_builtin(builtins/web/console.cpp)
 
 add_builtin(builtins/web/performance.cpp)
